@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(193, 227, 227);
+    font-family: Helvetica
+}
+
+.content {
+    padding: 50px;
+    display: flex;
+    margin: 25px auto;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+}
+
+.title h2 {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    color: rgb(90, 83, 132);
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-weight: bold;
+    letter-spacing: .25rem;
+}
+
+.photo {
+    width: 40%;
+    height: 46%;
+    border-radius: 10px;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: gray;
+}
+
+.timer {
+    display: flex;
+    gap: 20px;
+}
+
+.time-cube {
+    max-width: 80px;
+    height: 80px;
+    padding: 20px;
+    background: rgb(19, 19, 42);
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-cube h3 {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+.time-cube p {
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        padding: 10px;
+    }
+
+    .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .timer {
+        gap: 10px;
+    }
+}
